@@ -1,0 +1,10 @@
+from dynamic_plugins import BasePlugin
+
+
+class GoodbyePlugin(BasePlugin):
+    """Bids farewell."""
+
+    name = "goodbye"
+
+    def run(self) -> str:
+        return "Goodbye, world!"

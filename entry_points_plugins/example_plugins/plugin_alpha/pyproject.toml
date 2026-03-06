@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "plugin-alpha"
+version = "0.1.0"
+description = "Example plugin Alpha for entry_points_plugins"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["entry-points-plugins"]
+
+[project.entry-points."entry_points_plugins.plugins"]
+alpha = "plugin_alpha:AlphaPlugin"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/plugin_alpha"]
