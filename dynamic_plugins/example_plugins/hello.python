@@ -1,0 +1,10 @@
+from dynamic_plugins import BasePlugin
+
+
+class HelloPlugin(BasePlugin):
+    """Greets the world."""
+
+    name = "hello"
+
+    def run(self) -> str:
+        return "Hello, world!"

@@ -1,0 +1,4 @@
+# This file starts with an underscore, so it is intentionally skipped by
+# the PluginLoader.  Use it for shared helpers across your plugin files.
+
+SHARED_GREETING = "Greetings from the shared helper!"
